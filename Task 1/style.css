@@ -1,0 +1,318 @@
+*{
+    margin: 0; padding: 0; box-sizing: border-box;
+}
+
+.head-ele
+{
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.3)), url("Images\\320792-food-art-wallpaper-top-free-food-art-background.jpg");
+    background-position: center center; 
+    background-attachment: fixed;
+    overflow: hidden;
+    background-size: cover;
+}
+
+nav
+{
+    height: 90px;
+    width: 100%;
+    color: white;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo
+{
+    font-size: 3vmax;
+    text-transform: uppercase;
+    font-family: Abril Fatface;
+    letter-spacing: 3px;
+    position: relative;
+    font-weight: 400;
+}
+
+.navi a
+{
+    text-decoration: none;
+    font-family: Abril Fatface;
+    color: white;
+    letter-spacing: 2px;
+    font-size: 1.2vmax;
+    padding: 3px 20px;
+    position: relative;
+}
+
+.navi a::before{
+    content: ' ';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%; 
+    height: 100%;
+    border-bottom: 2px solid #005C46;
+    transition: 0.4s linear;
+}
+
+.navi a:hover::before
+{
+    width: 100%;
+}
+
+.txt
+{
+    width: 100%;
+    height: 85vh;
+    display: flexbox;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: Lora;
+}
+
+.txt h1
+{
+    margin: 300px 100px;
+    color: white;
+    letter-spacing: 2px;
+    font-size: 8vmin;
+    line-height: 70px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+h2
+{
+    width: 200px;
+    height: 5px;
+    background: #005C46;
+    border-radius: 5px;
+    margin: 10px auto;
+}
+
+.txt p
+{
+    margin: 30px 100px;
+    font-size: 3vmin;
+    text-align: center;
+    color: white;
+}
+
+.txt a
+{
+    text-decoration: none;
+    font-weight: 700;
+    color: white;
+    letter-spacing: 2px;
+    display: flexbox;
+    float: inline-start;
+    font-size: 18px;
+    padding: 10px 20px;
+    background: transparent;
+    border: 3px solid #005C46;
+    border-radius: 5px;
+}
+
+.txt a:hover
+{
+    background: #005C46;
+}
+
+section
+{
+    width: 88%;
+    margin: 50px auto;
+}
+
+.title
+{
+    text-align: center;
+    font-size: 3.7vmin;
+}
+
+.sec
+{
+    margin: 40px 0px;
+    background: #f2f3f4;
+    border-width: auto;
+    border: 1px solid #f2f3f4;
+    display: flex;
+}
+
+img
+{
+    margin: 30px 20px;
+    height: 400px;
+    width: 280px;
+}
+
+.content
+{
+    font-family: Lora;
+}
+
+.content h1
+{
+    font-size: 50px;
+    margin-top: 25px;
+    margin-left: 15px;
+}
+
+.content p
+{
+    font-size: 18px;
+    margin-left: 15px;
+}
+
+.content a
+{
+    font-weight: 400;
+    letter-spacing: 2px;
+    color: maroon;
+    font-size: 17px;
+    position: relative;
+    margin-left: 800px;
+}
+
+.head-ele2
+{
+    background-image: url('Images\\HD wallpaper_ black, low poly, monochrome, pattern, triangle, design, geometry.jfif');
+    color: white;
+    background-size: cover;
+    font-family: Lora;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.head-ele2 h3
+{
+    font-size: 45px;
+    font-weight: 900;
+    margin-top: 30px;
+}
+
+.head-ele2 p
+{
+    font-size: 15px;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+.listcon
+{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.listcon a 
+{
+    color: white;
+    font-size: 25px;
+    letter-spacing: 25px;
+}
+
+@media(max-width: 600px)
+{
+    nav
+    {
+        padding: 20px 20px;
+        display: block;
+    }
+
+    .navi a
+    {
+        display: inline-block;
+        margin-top: 25px;
+        font-size: 2.5vmin;
+    }
+
+    img
+    {
+        height: 240px;
+        width: 140px;
+    }
+
+    .txt
+    {
+        width: 100%;
+        display: block;
+    }
+
+    .txt h1
+    {
+        margin: 160px 30px 10px;
+        font-size: 20px;
+    }
+
+    h2
+    {
+        width: 100px;
+        height: 3px;
+        border-radius: 3px;
+        margin: auto;
+    }
+
+    .txt p
+    {
+        font-size: 9px;
+    }
+
+    .txt a
+    {
+        display: flexbox;
+        font-size: 9px;
+        padding: 8px 8px;
+    }
+
+    .content h1
+    {
+        font-size: 20px;
+    }
+
+    .content p
+    {
+        font-size: 3vw;
+        overflow: hidden;
+    }
+
+    .content a
+    {
+        font-size: 10px;
+        margin-left: 40px;
+        margin-top: 500px;
+    }
+
+    .head-ele2 h3
+    {
+        font-size: 25px;
+        font-weight: 900;
+        margin-top: 35px;
+    }
+
+    .head-ele2 p
+    {
+        font-size: 7px;
+        font-weight: 500;
+        margin-top: 15px;
+    }
+
+    .listcon
+    {
+        margin-left: 30px;
+        margin-bottom: 35px;
+    }
+
+    .listcon a
+    {
+        font-size: 15px;
+    }
+}
+
